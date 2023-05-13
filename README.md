@@ -22,9 +22,8 @@ In order to set up Wake On Lan on your computer, you need to:
    - If you want to not only start your computer remotely but also use it via Remote Desktop Connection, you need to set Port Forwarting on your router. When you use a remote desktop client to connect to your personal computer (PC), you are establishing a peer-to-peer connection. The host (your PC) must therefore be directly accessible to you. If you want to connect to your system from outside the network it is running on, you must somehow enable the access. 
 
 ```diff
-- Please be mindful when enabling port forwarding on 3389 as your 
-- computer is getting exposed to the external network and might 
-- be a target of hackers attack!
+- Please be mindful when enabling port forwarding on 3389 as your computer 
+- is getting exposed to the external network and might be a target of hackers attack!
 ```
 
 
