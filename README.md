@@ -16,11 +16,9 @@ Final result:
 ## How to configure Wake On Lan
 In order to set up Wake On Lan on your computer, you need to:
 1. Change the settings for the network card and enable wake on lan option
-</br>
 ⋅⋅⋅<img src="./images/WordCloud_rec.png" width="450" />
 2. In many cases, you should also go to the BIOS and activate such functionality from there as well
 4. Add *port forwarting* to the router on port 3389 and/or 3390.
-</br>
 ⋅⋅⋅If you want to not only start your computer remotely but also use it via Remote Desktop Connection, you need to set Port Forwarting on your router. When you use a remote desktop client to connect to your personal computer (PC), you are establishing a peer-to-peer connection. The host (your PC) must therefore be directly accessible to you. If you want to connect to your system from outside the network it is running on, you must somehow enable the access. 
 
 ```diff
