@@ -55,6 +55,6 @@ where python
 </br>
 <img src="./images/taskscheduler1.png" width="632" />
 
-As a trigger for a task select **On workstation lock**, so each time you press power button on the laptop (sleep mode) you script will be triggered.
+As a trigger for a task select **On workstation lock**, so each time you press power button on the laptop (sleep mode) you script will be triggered. Setting the Windows Task Scheduler to run on `Kernel Power` sleep event 42 was failing due to some unexpected error.
 </br>
 <img src="./images/taskscheduler2.png" width="675" />
