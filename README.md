@@ -1,5 +1,10 @@
 # ip-addresses
-Collector of external IP address
+The script retrieves the IP interior from https://ident.me then connects to the [Google Sheets API]([https://www.google.com](https://developers.google.com/sheets/api/guides/concepts) "Google Sheets API Overview") and adds the current computer address to the sheet.
+This simple application was created for Wake On Lan. My ISP assigns a dynamic IP address so waking up the computer remotely may not necessarily work in this case. However, having a list of the last IP used seems possible, at least for the "lease time" period set by the ISP.
+
+https://developers.google.com/sheets/api/guides/concepts
+
+
 
 
 # Facebook Messenger Word Cloud
