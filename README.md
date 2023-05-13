@@ -1,24 +1,31 @@
 # ip-addresses
 The script retrieves the IP interior from https://ident.me then connects to the [Google Sheets API](https://developers.google.com/sheets/api/guides/concepts "Google Sheets API Overview") and adds the current computer address to the sheet.
-This simple application was created for Wake On Lan. My ISP assigns a dynamic IP address so waking up the computer remotely may not necessarily work in this case. However, having a list of the last IP used seems possible, at least for the "lease time" period set by the ISP.
+This simple application was created for **Wake On Lan** purposes. My ISP assigns a dynamic IP address so waking up the computer remotely may not necessarily work in this case. However, having a list of the last IP used seems possible, at least for the *lease time* period set by the ISP.
+Finally, a script trigger was set using Task Scheduler, which launches the application when the sleep button on the laptop is clicked.
 
-https://developers.google.com/sheets/api/guides/concepts
+Final result:
+<img src="./images/sheets.png" width="450" />
 
-
-
-
-# Facebook Messenger Word Cloud
-Create Facebook Messenger Word Cloud based on the messeges exported from Facebook archive. Script extracts messages from one or multiple `message_x.HTML` files for a selected folder and transform into `.PNG` (Word Cloud) and `.CSV` (descending words list) containing most frequently used words.
-If you don't have any of the imported library, you can easily install them by coping the comment from the begining of the script `pip install XXX`. Generating a word cloud from a JSON file would probably be much simpler however, not everyone downloads this file as an archive at the first place and it wouldn't be such a challenge.
 
 ## Table of contents
-* [Example Usage](#Example-Usage)
-* [Custom shape](#Custom-shape)
-* [Downloading messages files](#Downloading-messages-files)
+* [How to configure Wake On Lan](#How-to-configure-Wake-On-Lan)
+* [Google Sheets API connection](#Google-Sheets-API-connection)
+* [Windows Task Scheduler](#Google-Sheets-API-connection)
 * [License](#License)
 
-## Example Usage
-Generate rectangular word cloud just providing the folder path containing the `.html` files:
+## How to configure Wake On Lan
+In order to set up Wake On Lan on your computer, you need to:
+1. Change the settings for the network card and enable wake on lan option
+⋅⋅⋅<img src="./images/WordCloud_rec.png" width="450" />
+2. In many cases, you should also go to the BIOS and activate such functionality from there as well
+3. Add "port forwarting" to the router on port 3389 and/or 3390.
+```
+:warning: Look out
+```
+
+
+Some resource for Wake On Lan instruction: [How to activate Wake On Lan in Windows 10 and 11](https://www.revouninstaller.com/blog/how-to-activate-wake-on-lan-in-windows-10-and-11)
+
 ```
 fb_word_cloud.py -p C:\fb\messages\inbox\username_xzdsmlmbaiw\
 ```
@@ -34,7 +41,7 @@ Generate Word Cloud in different shapes (see [Custom shape](#Custom-shape) ) wit
 fb_word_cloud.py -p C:\fb\messages\inbox\username\ -e a,in,an,or,and,how,why -i C:\Users\Desktop\like.jpg
 ```
 
-## Custom shape
+## Google Sheets API connection
 In order to create Word Cloud in various shapes, mask need to be provided in in a certain way. Script accepts only files with `.jpg`, `.jpeg` and `.png` extensions. Additionally, file need to have black `#000000` shape and white `#FFFFFF` background. For .png files background can be transparent.
 <p float="left">
   <img src="./images/like.jpg" width="400">   </img>
