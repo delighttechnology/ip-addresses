@@ -36,17 +36,23 @@ Explenation of risk related to the 3389 port forwarding: [Remote Desktop Penetra
 
 ## Google Sheets API connection
 I think here ia a good explenation what needs to be enabled and configured to have Google API working: [Enable Google Sheets API](https://mljar.com/blog/authenticate-python-google-sheets-service-account-json-credentials/)
-Remember that you need two APIs enabled: Google Sheets and Google Drive
+Remember that you need two APIs enabled: Google Sheets and Google Drive. This is how it is reflected in the code:
 
 ```python
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
           'https://www.googleapis.com/auth/drive']
 ```
 
-## Downloading messages files
-If you don't know how to download facebook archive, below you can find step by step manual.
+## Windows Task Scheduler
+The final step is to configure the Task Scheduler. All you need to do is create a new task and add a trigger. 
+</br>
+In `Program/Script` input paste the exact path to the python.exe application on your computer. You can find it easliy by typing in `cmd` command 
+```powershell
+where python
+```
+</br>
+<img src="./images/wakeonlan.png" width="400" />
 
-1. Click on you profile picture and select **Setting & Privacy** ⮕ **Settings**
 <p float="left">
   <img src="./images/facebook1.png" width="250">  ⮕  </img>
   <img src="./images/facebook2.png" width="250" />
