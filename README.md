@@ -46,26 +46,17 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
 ## Windows Task Scheduler
 The final step is to configure the Task Scheduler. All you need to do is create a new task and add a trigger. 
 </br>
-In `Program/Script` input paste the exact path to the python.exe application on your computer. You can find it easliy by typing in `cmd` command 
+* In `Program/Script` input paste the exact path to the python.exe application on your computer. You can find it easliy by typing in `cmd` command 
 ```powershell
 where python
 ```
+* In `Add arguments (optional)` input provide the name of the file with the python script to run
+* In `Start in (optional)` input provide the path to the folder with the script
+* 
 </br>
-<img src="./images/wakeonlan.png" width="400" />
+<img src="./images/taskscheduler1.png" width="632" />
 
-<p float="left">
-  <img src="./images/facebook1.png" width="250">  ⮕  </img>
-  <img src="./images/facebook2.png" width="250" />
-</p>
-<br/>
+As a trigger for a task select **On workstation lock**, so each time you press power button on the laptop (sleep mode) you script will be triggered.
 
-2. On the left side of the screen click **Privacy** tab and then **Your Facebook information**
-<p float="left">
-  <img src="./images/facebook3.png" width="250">  ⮕  </img>
-  <img src="./images/facebook4.png" width="250" />
-</p>
-<br/>
-
-3. You will have a list of options to choose from, please select **Download profile information**
-<img src="./images/facebook5.png" width="800" />
-<br/>
+</br>
+<img src="./images/taskscheduler2.png" width="675" />
