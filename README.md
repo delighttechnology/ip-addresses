@@ -3,8 +3,8 @@ The script retrieves the IP interior from https://ident.me then connects to the 
 This simple application was created for **Wake On Lan** purposes. My ISP assigns a dynamic IP address so waking up the computer remotely may not necessarily work in this case. However, having a list of the last IP used seems possible, at least for the *lease time* period set by the ISP.
 Finally, a script trigger was set using Task Scheduler, which launches the application when the sleep button on the laptop is clicked.
 
-Final result:
-<img src="./images/sheets.png" width="450" />
+Final result:</br>
+<img src="./images/sheets.png" width="342" />
 
 
 ## Table of contents
