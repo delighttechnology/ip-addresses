@@ -46,7 +46,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
 ## Windows Task Scheduler
 The final step is to configure the Task Scheduler. All you need to do is create a new task and add a trigger. 
 </br>
-* In `Program/Script` input paste the exact path to the python.exe application on your computer. You can find it easliy by typing in `cmd` command 
+* In `Program/Script` input paste the exact path to the python.exe application on your computer. You can find it easliy by typing in `cmd` command:
 ```powershell
 where python
 ```
