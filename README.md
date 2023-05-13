@@ -18,13 +18,14 @@ In order to set up Wake On Lan on your computer, you need to:
 1. Change the settings for the network card and enable wake on lan option
 ⋅⋅⋅<img src="./images/WordCloud_rec.png" width="450" />
 2. In many cases, you should also go to the BIOS and activate such functionality from there as well
-3. Add "port forwarting" to the router on port 3389 and/or 3390.
+4. Add *port forwarting* to the router on port 3389 and/or 3390.
+⋅⋅⋅If you want to not only start your computer remotely but also use it via Remote Desktop Connection, you need to set Port Forwarting on your router. When you use a remote desktop client to connect to your personal computer (PC), you are establishing a peer-to-peer connection. The host (your PC) must therefore be directly accessible to you. If you want to connect to your system from outside the network it is running on, you must somehow enable the access. 
 
- :warning: 
- ```
- Look out
+```diff
+- this code or text is the old version
 ```
 
+Also please check if you have enabled Remote Desktop Connections [Enable Remote Desktop on your PC](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-allow-access)
 
 Some resource for Wake On Lan instruction: [How to activate Wake On Lan in Windows 10 and 11](https://www.revouninstaller.com/blog/how-to-activate-wake-on-lan-in-windows-10-and-11)
 
