@@ -18,9 +18,9 @@ In order to set up Wake On Lan on your computer, you need to:
 1. Change the settings for the network card and enable wake on lan option
 ⋅⋅⋅<img src="./images/WordCloud_rec.png" width="450" />
 2. In many cases, you should also go to the BIOS and activate such functionality from there as well
-3. Add "port forwarting" to the router on port 3389 and/or 3390.
+3. Add "port forwarting" to the router on port 3389 and/or 3390. :warning:
 ```
-:warning: Look out
+ Look out
 ```
 
 
