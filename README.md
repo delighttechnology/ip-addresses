@@ -22,8 +22,8 @@ In order to set up Wake On Lan on your computer, you need to:
    - If you want to not only start your computer remotely but also use it via Remote Desktop Connection, you need to set Port Forwarting on your router. When you use a remote desktop client to connect to your personal computer (PC), you are establishing a peer-to-peer connection. The host (your PC) must therefore be directly accessible to you. If you want to connect to your system from outside the network it is running on, you must somehow enable the access. 
 
 ```diff
-- Please be mindful when enabling port forwarding on 3389 as your computer 
-- is getting exposed to the external network and might be a target of hackers attack!
+- Please be mindful when enabling port forwarding on 3389 as your computer is 
+- getting exposed to the external network and might be a target of hackers attack!
 ```
 
 
@@ -35,11 +35,13 @@ Explenation of risk related to the 3389 port forwarding: [Remote Desktop Penetra
 
 
 ## Google Sheets API connection
-In order to create Word Cloud in various shapes, mask need to be provided in in a certain way. Script accepts only files with `.jpg`, `.jpeg` and `.png` extensions. Additionally, file need to have black `#000000` shape and white `#FFFFFF` background. For .png files background can be transparent.
-<p float="left">
-  <img src="./images/like.jpg" width="400">   </img>
-  <img src="./images/WordCloud.png" width="400" />
-</p>
+I think here ia a good explenation what needs to be enabled and configured to have Google API working: [Enable Google Sheets API](https://mljar.com/blog/authenticate-python-google-sheets-service-account-json-credentials/)
+Remember that you need two APIs enabled: Google Sheets and Google Drive
+
+```python
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
+          'https://www.googleapis.com/auth/drive']
+```
 
 ## Downloading messages files
 If you don't know how to download facebook archive, below you can find step by step manual.
