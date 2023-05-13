@@ -22,12 +22,15 @@ In order to set up Wake On Lan on your computer, you need to:
 ⋅⋅⋅If you want to not only start your computer remotely but also use it via Remote Desktop Connection, you need to set Port Forwarting on your router. When you use a remote desktop client to connect to your personal computer (PC), you are establishing a peer-to-peer connection. The host (your PC) must therefore be directly accessible to you. If you want to connect to your system from outside the network it is running on, you must somehow enable the access. 
 
 ```diff
-- this code or text is the old version
+- Please be mindful when enabling port forwarding on 3389 as your computer is getting exposed to the external network and might be a target of hackers attack
 ```
+
 
 Also please check if you have enabled Remote Desktop Connections [Enable Remote Desktop on your PC](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-allow-access)
 
 Some resource for Wake On Lan instruction: [How to activate Wake On Lan in Windows 10 and 11](https://www.revouninstaller.com/blog/how-to-activate-wake-on-lan-in-windows-10-and-11)
+
+Explenation of risk related to the 3389 port forwarding: [Remote Desktop Penetration Testing](https://www.hackingarticles.in/remote-desktop-penetration-testing-port-3389/)
 
 ```
 fb_word_cloud.py -p C:\fb\messages\inbox\username_xzdsmlmbaiw\
