@@ -17,14 +17,12 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
           'https://www.googleapis.com/auth/drive']
 
 # address to the JSON Key genereted by API for ServiceAccount
-creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\Users\\Andrzej\\Documents\\Python\\ip_addresses\\ipaddresses-f1c86666378c.json", scopes=SCOPES)
+creds = ServiceAccountCredentials.from_json_keyfile_name("C:\\temp\\key.json", scopes=SCOPES)
 file = gspread. authorize (creds)
 sheet = file.open("ip_addresses")
 sheet = sheet.sheet1
 
-# row insert
+# insert ro at the top of the list with the date and IP
 insertRow = [date,time,external_ip]
 sheet.insert_row([' '], index=2)
 sheet.append_row(insertRow,value_input_option="USER_ENTERED", table_range="A2:C2")
-
-
